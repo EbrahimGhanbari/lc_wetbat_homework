@@ -1,0 +1,23 @@
+{
+  "name": "web_bat",
+  "version": "1.0.0",
+  "description": "Wet Bat Quoting System API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "migrate": " npx knex migrate:latest --knexfile db/knexfile.js"
+  },
+  "author": "Ebrahim Ghanbari",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "knex": "^0.95.10",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.12"
+  }
+}
