@@ -2,7 +2,7 @@
   "name": "web_bat",
   "version": "1.0.0",
   "description": "Wet Bat Quoting System API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "migrate": "npx knex migrate:latest --knexfile db/knexfile.js",
