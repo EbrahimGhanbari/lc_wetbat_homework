@@ -14,7 +14,7 @@ exports.seed = async function (knex) {
     .then((data) => data[0].id);
 
   const fakeData = [];
-  const nimberOfRows = 10;
+  const nimberOfRows = 50;
 
   for (let i = 0; i < nimberOfRows; i++) {
     const data = { ...fakeDataMaker().quotes, owner_id, costumer_id };

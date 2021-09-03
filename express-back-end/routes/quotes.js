@@ -18,7 +18,6 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:quoteID", (req, res) => {
-  //   res.send(req.params.quoteID);
   db.select(
     "q.id as quote_id",
     "q.from",

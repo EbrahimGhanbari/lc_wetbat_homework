@@ -16,6 +16,7 @@ export default function ({ quoteid }) {
       .get(`/api/quotes/${quoteid}`)
       .then((response) => {
         if (!response.data[0]) return undefined;
+
         return quoteDataMaker(response.data[0]);
       })
       .then((data) => {
@@ -25,7 +26,7 @@ export default function ({ quoteid }) {
 
   return (
     <>
-      <p>Quote Details</p>
+      <h3>Quote Details</h3>
       {quoteid ? (
         <TableSampleTwo rows={quoteDetail} columns={columns} />
       ) : (

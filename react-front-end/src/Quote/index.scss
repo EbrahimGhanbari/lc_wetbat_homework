@@ -1,8 +1,15 @@
+.quote_title {
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+}
+
 .quote {
   display: flex;
+  justify-content: space-between;
 
   .quote_table {
-    background-color: bisque;
+    padding: 5vw;
     width: 50vw;
     height: 80vh;
 
@@ -15,6 +22,7 @@
   }
 
   .quote_detail {
+    padding: 5vw;
     width: 50vw;
     height: 80vh;
   }

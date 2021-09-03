@@ -33,22 +33,25 @@ export default function ({ setQuoteid }) {
   }, []);
 
   return (
-    <TableSampleThree
-      rows={rows}
-      columns={[
-        { label: "Quote ID", field: "id", sort: "asc", width: 100 },
-        {
-          label: "Destination",
-          field: "destination",
-          sort: "asc",
-          width: 150,
-          attributes: {
-            "aria-controls": "DataTable",
-            "aria-label": "Name",
+    <>
+      <h3>Quote List</h3>
+      <TableSampleThree
+        rows={rows}
+        columns={[
+          { label: "Quote ID", field: "id", sort: "asc", width: 100 },
+          {
+            label: "Destination",
+            field: "destination",
+            sort: "asc",
+            width: 150,
+            attributes: {
+              "aria-controls": "DataTable",
+              "aria-label": "Name",
+            },
           },
-        },
-        { label: "Price", field: "price", sort: "asc", width: 100 },
-      ]}
-    />
+          { label: "Price", field: "price", sort: "asc", width: 100 },
+        ]}
+      />
+    </>
   );
 }
