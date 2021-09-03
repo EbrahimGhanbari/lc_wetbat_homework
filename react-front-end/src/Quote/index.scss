@@ -1,0 +1,21 @@
+.quote {
+  display: flex;
+
+  .quote_table {
+    background-color: bisque;
+    width: 50vw;
+    height: 80vh;
+
+    button {
+      border: none;
+      background-color: none;
+      color: blue;
+      background-color: Transparent;
+    }
+  }
+
+  .quote_detail {
+    width: 50vw;
+    height: 80vh;
+  }
+}
