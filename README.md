@@ -5,6 +5,9 @@ Postgres - Express - React app to show quotes
 ## ERD Design
 ![quote](https://user-images.githubusercontent.com/64554523/131893761-315058eb-87b2-42a4-a99c-c3081dadf290.png)
 
+## Snapshot
+![image](https://user-images.githubusercontent.com/64554523/132034308-e1fcb8e1-c4af-4240-bbeb-e296877bfe4e.png)
+
 
 ## Installations
 1. Clone the repo into your machine
