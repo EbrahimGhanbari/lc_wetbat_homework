@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import TableSampleOne from "../Templates/TableSampleOne";
 import TableSampleThree from "../Templates/TableSampleThree";
 
-export default function ({ setQuoteid }) {
+export default function QuoteList({ setQuoteid }) {
   const [rows, setRows] = useState([]);
 
   //fetch data from API
@@ -12,9 +11,8 @@ export default function ({ setQuoteid }) {
       .get("/api/quotes")
       .then((response) => {
         let data = [];
-
         response.data.map((row) => {
-          data.push({
+          return data.push({
             id: (
               <button onClick={() => setQuoteid(row.quote_id)}>
                 {row.quote_id}

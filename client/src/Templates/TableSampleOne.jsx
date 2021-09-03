@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { MDBDataTable } from "mdbreact";
 
-export default function ({ rows, columns }) {
+export default function TableSampleOne({ rows, columns }) {
   const data = { columns, rows };
 
   return (

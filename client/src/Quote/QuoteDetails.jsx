@@ -3,7 +3,7 @@ import axios from "axios";
 import TableSampleTwo from "../Templates/TableSampleTwo";
 import { quoteDataMaker } from "./helperFunctions";
 
-export default function ({ quoteid }) {
+export default function QuoteDetails({ quoteid }) {
   const [quoteDetail, setQuoteDetail] = useState([]);
 
   const columns = [
